@@ -35,3 +35,14 @@ C:\Users\fic\Desktop\FastradeBanco\backend\obj\Debug\netcoreapp3.0\backend.Razor
 C:\Users\fic\Desktop\FastradeBanco\backend\obj\Debug\netcoreapp3.0\backend.csproj.CopyComplete
 C:\Users\fic\Desktop\FastradeBanco\backend\obj\Debug\netcoreapp3.0\backend.dll
 C:\Users\fic\Desktop\FastradeBanco\backend\obj\Debug\netcoreapp3.0\backend.pdb
+C:\Users\fic\Desktop\FastradeBanco\backend\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\fic\Desktop\FastradeBanco\backend\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\fic\Desktop\FastradeBanco\backend\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\fic\Desktop\FastradeBanco\backend\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\fic\Desktop\FastradeBanco\backend\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\fic\Desktop\FastradeBanco\backend\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\fic\Desktop\FastradeBanco\backend\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\fic\Desktop\FastradeBanco\backend\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\fic\Desktop\FastradeBanco\backend\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\fic\Desktop\FastradeBanco\backend\bin\Debug\netcoreapp3.0\Newtonsoft.Json.Bson.dll
+C:\Users\fic\Desktop\FastradeBanco\backend\bin\Debug\netcoreapp3.0\System.IdentityModel.Tokens.Jwt.dll

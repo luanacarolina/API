@@ -13,18 +13,17 @@ namespace backend.Controllers {
         //Get: Api/Oferta
         [HttpGet]
         public async Task<ActionResult<List<Oferta>>> Get () {
-
-            var oferta = await _contexto.Oferta.ToListAsync ();
-
+            //Include("")
+            var oferta = await _contexto.Oferta.Include("IdProdutoNavigation").Include("IdUsuarioNavigation").ToListAsync();
             if (oferta == null) {
                 return NotFound();
             }
             return oferta;
         }
-        //Get: Api/Oferta
+        //Get: Api/Oferta/2
         [HttpGet ("{id}")]
         public async Task<ActionResult<Oferta>> Get(int id){
-            var oferta = await _contexto.Oferta.FindAsync (id);
+            var oferta = await _contexto.Oferta.Include("IdProdutoNavigation").Include("IdUsuarioNavigation").FirstOrDefaultAsync (e =>e.IdOferta ==id);
 
             if (oferta == null){
                 return NotFound ();
