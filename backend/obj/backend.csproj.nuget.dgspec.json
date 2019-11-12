@@ -1,28 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fic\\Desktop\\FastradeBanco\\backend\\backend.csproj": {}
+    "C:\\Users\\fic\\Desktop\\API\\backend\\backend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fic\\Desktop\\FastradeBanco\\backend\\backend.csproj": {
+    "C:\\Users\\fic\\Desktop\\API\\backend\\backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fic\\Desktop\\FastradeBanco\\backend\\backend.csproj",
+        "projectUniqueName": "C:\\Users\\fic\\Desktop\\API\\backend\\backend.csproj",
         "projectName": "backend",
-        "projectPath": "C:\\Users\\fic\\Desktop\\FastradeBanco\\backend\\backend.csproj",
+        "projectPath": "C:\\Users\\fic\\Desktop\\API\\backend\\backend.csproj",
         "packagesPath": "C:\\Users\\fic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fic\\Desktop\\FastradeBanco\\backend\\obj\\",
+        "outputPath": "C:\\Users\\fic\\Desktop\\API\\backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\fic\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\fic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -56,6 +60,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.0.0-rc4, )"
             }
           },
           "imports": [

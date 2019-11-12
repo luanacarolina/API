@@ -15,7 +15,7 @@ namespace backend.Models
         [Key]
         [Column("Id_Receita")]
         public int IdReceita { get; set; }
-        [StringLength(50)]
+        [StringLength(255)]
         public string Nome { get; set; }
 
         [InverseProperty("IdReceitaNavigation")]

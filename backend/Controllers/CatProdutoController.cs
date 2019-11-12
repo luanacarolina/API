@@ -10,7 +10,12 @@ namespace backend.Controllers {
     public class CatProdutoController : ControllerBase {
         fastradeContext _contexto = new fastradeContext ();
 
+
         //Get: Api/Catproduto
+        /// <summary>
+        /// Aqui são todas as Categorias de Produtos
+        /// </summary>
+        /// <returns>Lista de Categoria de produtos</returns>
         [HttpGet]
         public async Task<ActionResult<List<CatProduto>>> Get () {
 
@@ -22,6 +27,11 @@ namespace backend.Controllers {
             return catprodutos;
         }
         //Get: Api/Catproduto
+        /// <summary>
+        /// Aqui pegamos apenas uma categoria de produto
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Unico Id de categoria de produtos</returns>
         [HttpGet ("{id}")]
         public async Task<ActionResult<CatProduto>> Get(int id){
             var catproduto = await _contexto.CatProduto.FindAsync (id);
@@ -32,6 +42,11 @@ namespace backend.Controllers {
             return catproduto;
         }
         //Post: Api/CatProduto
+        /// <summary>
+        /// Aqui enviamos mais categorias de produtos
+        /// </summary>
+        /// <param name="catProduto">Envia uma categoria de produtos</param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<ActionResult<CatProduto>> Post (CatProduto catProduto){
             try{
@@ -46,6 +61,12 @@ namespace backend.Controllers {
             return catProduto;
         }
         //Put: Api/CatProduto
+        /// <summary>
+        /// Aqui alteramos dados das categorias de produto
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="catProduto"></param>
+        /// <returns>Alteração de categoria de produto</returns>
         [HttpPut ("{id}")]
         public async Task<ActionResult> Put (int id, CatProduto catProduto){
             if(id != catProduto.IdCatProduto){
@@ -67,6 +88,11 @@ namespace backend.Controllers {
             return NoContent();
         }
          // DELETE api/CatProduto/id
+         /// <summary>
+         /// Aqui deletamos uma categoria de produtos
+         /// </summary>
+         /// <param name="id"></param>
+         /// <returns>Deleta uma categoria</returns>
         [HttpDelete("{id}")]
         public async Task<ActionResult<CatProduto>> Delete(int id){
 
